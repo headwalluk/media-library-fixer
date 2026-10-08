@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (if needed later)
+node_modules/
+
+# Composer
+vendor/
+composer.lock
+
+# Build files
+*.map
+
+# WordPress
+wp-config.php
+
+# Private development notes. Never published: may contain fleet measurements,
+# client site names and unredacted diagnostics. Backed up with the dev site,
+# and blocked from remote access by dev-notes/.htaccess.
+dev-notes/

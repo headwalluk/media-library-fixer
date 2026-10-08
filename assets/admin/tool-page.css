@@ -1,0 +1,88 @@
+/**
+ * Media Library Fixer tool page.
+ *
+ * @package Media_Library_Fixer
+ * @since 0.1.0
+ */
+
+/* Core's .button and the flex rule below would otherwise override the hidden attribute. */
+.mlfixer-wrap [hidden] {
+	display: none !important;
+}
+
+.mlfixer-wrap .mlfixer-module.card {
+	max-width: none;
+	margin-block-end: 20px;
+}
+
+.mlfixer-controls .button-link {
+	margin-inline-start: 8px;
+}
+
+.mlfixer-progress {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.mlfixer-progress progress {
+	inline-size: min(100%, 480px);
+	block-size: 16px;
+}
+
+.mlfixer-error,
+.mlfixer-warning {
+	color: #b32d2e;
+}
+
+.mlfixer-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 12px;
+	margin-block: 12px 8px;
+}
+
+.mlfixer-table-scroll {
+	max-block-size: 420px;
+	overflow: auto;
+	border: 1px solid #c3c4c7;
+}
+
+.mlfixer-table-scroll .mlfixer-table {
+	border: 0;
+}
+
+.mlfixer-table thead th,
+.mlfixer-table thead td {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background: #fff;
+}
+
+.mlfixer-table td,
+.mlfixer-table th {
+	overflow-wrap: anywhere;
+}
+
+.mlfixer-log {
+	max-block-size: 220px;
+	overflow: auto;
+	margin-inline-start: 0;
+	padding: 8px 12px;
+	padding-inline-start: 2.5em;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 12px;
+}
+
+.mlfixer-log-error {
+	color: #b32d2e;
+}
+
+.mlfixer-log-summary {
+	font-weight: 600;
+	list-style: none;
+}

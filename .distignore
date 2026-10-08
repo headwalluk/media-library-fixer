@@ -1,0 +1,50 @@
+# Files and directories excluded from release builds.
+# Used by .github/workflows/release.yml via `rsync --exclude-from`.
+
+# Version control
+.git
+.gitignore
+.gitattributes
+.github
+
+# Development notes (internal — not for end users)
+dev-notes
+docs
+
+# Build / dependency manifests
+build
+node_modules
+vendor
+composer.json
+composer.lock
+package.json
+package-lock.json
+
+# Tooling configs
+.distignore
+phpcs.xml
+phpcs.xml.dist
+.phpcs.xml
+.phpcs.xml.dist
+.editorconfig
+.eslintrc
+.eslintrc.json
+.prettierrc
+.prettierrc.json
+
+# IDE / OS metadata
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Project meta files (kept on GitHub, stripped from release zip).
+# readme.txt is the in-WP-admin equivalent and IS shipped in the zip.
+README.md
+CHANGELOG.md
+SECURITY.md
+CLAUDE.md
+.claude
