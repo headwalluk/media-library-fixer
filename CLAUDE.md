@@ -191,6 +191,10 @@ Follow Quick 2FA's `CLAUDE.md` in full. The rules that come up most here:
 
 Private, untracked:
 
+- `dev-notes/03-working-notes.md` — **read first in a new session**: environment, state, testing
+  tools, lessons learned. Written because Claude Code's memory doesn't follow the repo between
+  paths
+- `dev-notes/testing/browser/` — headless-Chromium tests of the tool page (`run.sh`)
 - `dev-notes/00-project-tracker.md` — client context, the survey behind the defaults, decisions,
   candidate modules
 - `dev-notes/02-snagging-list.md` — small agreed items. Check it before starting work
